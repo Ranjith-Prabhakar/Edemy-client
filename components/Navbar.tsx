@@ -24,7 +24,7 @@ const Navbar = (props: Props) => {
         </div>
         <div>
           <input
-            className="rounded-full w-96 h-[46px] px-7 text-black outline-none placeholder:text-gray-500 bg-gray-800"
+            className="rounded-full w-96 h-[46px] px-7 text-black outline-none placeholder:text-gray-500 bg-gray-800 focus:border-1 focus:border-[#FFD700]"
             type="search"
             placeholder="search...."
           />
@@ -41,7 +41,7 @@ const Navbar = (props: Props) => {
           <Link href={"/be_instructor"}>
             <IoIosNotifications size={25} />
           </Link>
-          <Link href={"/be_instructor"}>
+          <Link href={"/login"}>
             <CgProfile size={35} />
           </Link>
         </div>
