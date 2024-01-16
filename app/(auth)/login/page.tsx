@@ -1,46 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoGithub } from "react-icons/io5";
 import { IoHome } from "react-icons/io5";
-type Props = {
-  login: string;
-};
 
+type Props = {};
 const page = (props: Props) => {
   return (
-    // <div className="flex flex-col max-w-[25%] my-[20vh] mx-auto justify-center bg-gray-800 items-center py-10 rounded-2xl">
-    //   <h1 className="mb-5 font-bold text-xl">Login to your account</h1>
-    //   <form>
-    //     <label className="ms-3">Email</label>
-    //     <br />
-    //     <input
-    //       type="email"
-    //       className="mt-1 mb-2 h-8 rounded-2xl p-3 outline-none  text-black"
-    //     />
-    //     <br />
-
-    //     <label className="ms-3">Password</label>
-    //     <br />
-    //     <input
-    //       type="password"
-    //       className="mt-1 h-8 rounded-2xl p-3 outline-none  text-black"
-    //     />
-    //     <br />
-
-    //     <div className="flex justify-center items-center">
-    //       <button className="mt-3  bg-[#FFD700] text-black rounded-sm px-3 py-1">
-    //         Submit
-    //       </button>
-    //     </div>
-    //   </form>
-    //   <br />
-    //   <div className="flex gap-2">
-    //     <FcGoogle size={25} />
-    //     <IoLogoGithub size={25} />
-    //   </div>
-    // </div>
+    
     <section className="bg-gray-50 dark:bg-gray-900">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">

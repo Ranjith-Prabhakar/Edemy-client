@@ -10,6 +10,7 @@ const config: Config = {
      "./public/**/*.html", ////
 
   ],
+  darkMode:"class",
   theme: {
     extend: {
        colors: {

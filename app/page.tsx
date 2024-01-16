@@ -1,13 +1,12 @@
-import Image from "next/image";
-import Navbar from "../components/Navbar";
-import Carousal from "../components/Carousal";
+import Navbar from "./components/Navbar";
+import Carousal from "./components/Carousal";
+import Hero from "./components/Hero";
 export default function Home() {
   return (
     <>
-      <h1>
         <Navbar />
         <Carousal />
-      </h1>
+        <Hero />
     </>
   );
 }

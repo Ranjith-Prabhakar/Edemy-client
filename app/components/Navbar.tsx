@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { FaRegHeart } from "react-icons/fa";
@@ -5,13 +6,14 @@ import { FaCartPlus } from "react-icons/fa6";
 import { IoIosNotifications } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import Image from "next/image";
-import logo from "../public/Assets/Logo.png";
+import logo from "../../public/Assets/Logo.png";
+import ThemeToggler from "./ThemeToggler";
 type Props = {};
 
 const Navbar = (props: Props) => {
   return (
     <div className="p-5">
-      <div className="flex justify-between items-center text-[#FFD700]">
+      <div className="flex justify-between items-center text-black dark:text-[#FFD700]">
         <div className="flex items-center  gap-4">
           <Link href={"/home"}>
             <Image
@@ -20,11 +22,16 @@ const Navbar = (props: Props) => {
               className="w-[100px] h-[100px]"
             />
           </Link>
+
           <Link href={"/categories"}>Categories</Link>
+
+          <div className="flex flex-1 justify-end">
+            <ThemeToggler />
+          </div>
         </div>
         <div>
           <input
-            className="rounded-full w-96 h-[46px] px-7 text-black outline-none placeholder:text-gray-500 bg-gray-800 focus:border-1 focus:border-[#FFD700]"
+            className="rounded-full w-96 h-[46px] px-7 text-black outline-none placeholder:text-gray-500 dark:bg-gray-800 focus:border-1 darK:focus:border-[#FFD700]"
             type="search"
             placeholder="search...."
           />
