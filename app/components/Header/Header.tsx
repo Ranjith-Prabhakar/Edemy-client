@@ -6,11 +6,11 @@ import { FaCartPlus } from "react-icons/fa6";
 import { IoIosNotifications } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 import Image from "next/image";
-import logo from "../../public/Assets/Logo.png";
-import ThemeToggler from "./ThemeToggler";
+import logo from "../../../public/Assets/Logo.png";
+import ThemeToggler from "../utils/ThemeToggler";
 type Props = {};
 
-const Navbar = (props: Props) => {
+const Header = (props: Props) => {
   return (
     <div className="p-5">
       <div className="flex justify-between items-center text-black dark:text-[#FFD700]">
@@ -57,4 +57,4 @@ const Navbar = (props: Props) => {
   );
 };
 
-export default Navbar;
+export default Header;

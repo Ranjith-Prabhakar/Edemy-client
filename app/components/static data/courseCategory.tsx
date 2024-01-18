@@ -1,12 +1,23 @@
-import artificial_intelligence from '../../../public/Assets/artificial_intelligence.jpg'
+import artificial_intelligence from "../../../public/Assets/artificial_intelligence.jpg";
 import mechine_language from "../../../public/Assets/mechine_language.webp";
 import ui_ux from "../../../public/Assets/ui_ux.avif";
 import web_development from "../../../public/Assets/web_development.avif";
 
+interface Course {
+  name: string;
+  url: string;
+  thumbnail: any;
+  trainer: string;
+  duration: string;
+}
 
-export const courseCategory:Array<Object> = [
+export const courseCategory: Array<{
+  name: string;
+  courses: Array<Course>;
+}> = [
   {
-    Web_development: [
+    name: "web Development",
+    courses: [
       {
         name: "Mern",
         url: "https://www.google.com/",
@@ -29,8 +40,10 @@ export const courseCategory:Array<Object> = [
         duration: "15h",
       },
     ],
-
-    Ui_ux: [
+  },
+  {
+    name: "ui ux",
+    courses: [
       {
         name: "Mern",
         url: "https://www.google.com/",
@@ -53,8 +66,10 @@ export const courseCategory:Array<Object> = [
         duration: "15h",
       },
     ],
-
-    Artificial_intelligence: [
+  },
+  {
+    name: "ai",
+    courses: [
       {
         name: "Mern",
         url: "https://www.google.com/",
@@ -77,8 +92,10 @@ export const courseCategory:Array<Object> = [
         duration: "15h",
       },
     ],
-
-    Mechine_lerning: [
+  },
+  {
+    name: "Mechine learning",
+    courses: [
       {
         name: "Mern",
         url: "https://www.google.com/",
