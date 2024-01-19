@@ -1,10 +1,25 @@
 import Link from "next/link";
 import React from "react";
 import { IoHome } from "react-icons/io5";
+import {signupSchema} from "../schemas/schemas"
+import {useFormik}  from "formik"
 
 type Props = {};
 
 const page = (props: Props) => {
+
+  const {values,errors,touched,isSubmitting,handleChange,handleBlur,handleSubmit}=useFormik({
+    initialValues:{
+      name:"",
+      email:"",
+      password:""
+    },
+    validationSchema:signupSchema,
+    onSubmit:(values,actions)=>{
+      console.log("submited")
+      actions.resetForm()
+    }
+  })
   return (
     <section className="bg-gray-50 dark:bg-gray-900">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
@@ -19,7 +34,7 @@ const page = (props: Props) => {
               </Link>
             </div>
 
-            <form className="space-y-4 md:space-y-6" action="#">
+            <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -33,8 +48,12 @@ const page = (props: Props) => {
                   id="name"
                   className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Tony stark"
-                  required
+                  value={values.email}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
                 />
+                {errors.name && touched.name && 
+                <p className="text-red-600">please give a valid name</p>}
               </div>
               <div>
                 <label
