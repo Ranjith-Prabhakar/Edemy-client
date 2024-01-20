@@ -1,15 +1,14 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-
+import carousal from "../../../public/Assets/carousal.png";
 type Props = {};
 
 const Carousal = (props: Props) => {
   return (
-    <div className="mt-7 h-[70vh] max-w-[90%] w-full m-auto rounded-lg flex justify-start  p-[25px]">
-      <div className="w-2/5 "> first section</div>
-      <div className="flex flex-col w-3/5 ">
-        <h1 className="font-semibold text-5xl mt-10 leading-[60px] ">
+    <div className="mt-7 h-[70vh] max-w-[90%] w-full m-auto rounded-lg flex justify-between  p-[25px]">
+      <div className="flex flex-col  text-start w-3/5 ">
+        <h1 className="font-semibold text-5xl   leading-[60px] ">
           Find The Best Courses
           <br /> To Grow Your <span className="text-[#FFD700]">Skills</span>
         </h1>
@@ -41,6 +40,15 @@ const Carousal = (props: Props) => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="w-2/5 ">
+        <Image
+          src={carousal}
+          className="w-full h-[80vh]"
+          
+          alt="carousal image"
+        />
       </div>
     </div>
   );

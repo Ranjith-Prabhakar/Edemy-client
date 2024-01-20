@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathName = usePathname();
-  const pathList = ["/login", "/sign-up","/admin_dashbord"];
+  const pathList = ["/login", "/sign-up"];
   // const pathStatus =
   console.log(pathName);
   return (

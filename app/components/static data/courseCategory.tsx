@@ -93,30 +93,30 @@ export const courseCategory: Array<{
       },
     ],
   },
-  {
-    name: "Mechine learning",
-    courses: [
-      {
-        name: "Mern",
-        url: "https://www.google.com/",
-        thumbnail: mechine_language,
-        trainer: "john doe",
-        duration: "15h",
-      },
-      {
-        name: "Mean",
-        url: "https://www.google.com/",
-        thumbnail: mechine_language,
-        trainer: "john doe",
-        duration: "15h",
-      },
-      {
-        name: "Django",
-        url: "https://www.google.com/",
-        thumbnail: mechine_language,
-        trainer: "john doe",
-        duration: "15h",
-      },
-    ],
-  },
+  // {
+  //   name: "Mechine learning",
+  //   courses: [
+  //     {
+  //       name: "Mern",
+  //       url: "https://www.google.com/",
+  //       thumbnail: mechine_language,
+  //       trainer: "john doe",
+  //       duration: "15h",
+  //     },
+  //     {
+  //       name: "Mean",
+  //       url: "https://www.google.com/",
+  //       thumbnail: mechine_language,
+  //       trainer: "john doe",
+  //       duration: "15h",
+  //     },
+  //     {
+  //       name: "Django",
+  //       url: "https://www.google.com/",
+  //       thumbnail: mechine_language,
+  //       trainer: "john doe",
+  //       duration: "15h",
+  //     },
+  //   ],
+  // },
 ];

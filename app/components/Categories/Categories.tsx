@@ -1,17 +1,14 @@
+"use client";
 import React from "react";
 import { Data } from "./Data";
 type Props = {};
 
 const Categories = (props: Props) => {
   return (
-    <section>
+    <div className="flex gap-2">
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr className="flex justify-between">
-              <input type="text" />
-              <button> create new</button>
-            </tr>
             <tr>
               <th scope="col" className="px-6 py-3">
                 Sl No
@@ -43,10 +40,15 @@ const Categories = (props: Props) => {
           </tbody>
         </table>
       </div>
-    </section>
+
+      <div>
+        <input type="text" className="bg-gray-800 rounded-md" />
+        <button className="bg-[#FFD700] text-black mt-2 px-3 rounded-sm">add new</button>
+      </div>
+    </div>
   );
 };
-
+//#212121
 export default Categories;
 
 // // "use client"
