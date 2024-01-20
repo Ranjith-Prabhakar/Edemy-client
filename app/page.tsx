@@ -1,12 +1,14 @@
 import Carousal from "./components/Carousal/Carousal";
 import Hero from "./components/Hero/Hero";
 import Slider from "./components/Slider/Slider";
+import Testimonial from "./components/Testimonial/Testimonial"
 export default function Home() {
   return (
     <>
       <Carousal />
       <Hero />
       <Slider />
+      <Testimonial />
     </>
   );
 }
