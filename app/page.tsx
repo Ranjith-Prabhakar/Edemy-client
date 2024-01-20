@@ -1,10 +1,12 @@
 import Carousal from "./components/Carousal/Carousal";
 import Hero from "./components/Hero/Hero";
+import Slider from "./components/Slider/Slider";
 export default function Home() {
   return (
     <>
       <Carousal />
       <Hero />
+      <Slider />
     </>
   );
 }
