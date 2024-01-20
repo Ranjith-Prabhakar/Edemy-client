@@ -24,7 +24,7 @@ type Props = {
 
 const CourseCard = ({ courseCategory }: Props): ReactNode => {
   return (
-    <div className="flex justify-between gap-3 mt-12 w-full">
+    <div className="flex justify-between gap-3  w-full">
       {courseCategory.map((item, index) => (
         <div
           key={index}

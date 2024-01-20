@@ -13,7 +13,7 @@ const Slider = (props: Props) => {
   const [count, setCount] = useState(0);
   return (
     <>
-      <div className="flex my-12 h-[70vh] max-w-[90%] w-full m-auto rounded-lg gap-5 overflow-hidden relative">
+      <div className="flex my-[80px] h-[70vh] max-w-[90%] w-full m-auto rounded-lg gap-5 overflow-hidden relative">
         <div className="w-full">
           <Image
             src={images[count]}

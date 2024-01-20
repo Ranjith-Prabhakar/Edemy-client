@@ -49,7 +49,7 @@ const Testimonial = (props: Props) => {
         <span className="text-[#FFD700]"> Our </span>
         Students Voice
       </h1>
-      <div className="flex">
+      <div className="flex mt-5">
         <div className="w-1/2">
           <Image src={StudentVoice} alt="student" className="w-[80%]"></Image>
         </div>

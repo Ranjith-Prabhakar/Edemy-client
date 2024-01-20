@@ -3,6 +3,7 @@
 // import { Inter } from "next/font/google";
 import { Roboto } from "next/font/google";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import { usePathname } from "next/navigation";
 import "./globals.css";
 const roboto = Roboto({
@@ -20,14 +21,14 @@ export default function RootLayout({
 }) {
   const pathName = usePathname();
   const pathList = ["/login", "/sign-up"];
-  // const pathStatus =
-  console.log(pathName);
+  
   return (
     <html lang="en">
       <body className={`${roboto.className} dark:bg-black dark:text-white`}>
         {pathList.includes(pathName) === false && <Header />}
 
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -13,7 +13,7 @@ const AboutUs = (props: Props) => {
         <h1 className="underline underline-offset-8 text-[#FFD700] font-bold text-4xl">
           About us
         </h1>
-        <p className="mt-3 leading-7">
+        <p className="mt-5 leading-7">
           Welcome to our e-learning platform, where knowledge meets convenience.
           Explore a diverse range of courses tailored to your interests and
           goals. Engage in interactive lessons, connect with expert instructors,

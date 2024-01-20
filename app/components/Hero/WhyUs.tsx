@@ -10,7 +10,7 @@ const WhyUs = (props: Props) => {
       <h1 className="text-5xl font-semibold text-center">
         Why Choose <span className="text-[#FFD700]"> Us </span>
       </h1>
-      <div className="grid grid-cols-3 gap-5 mt-12 ">
+      <div className="grid grid-cols-3 gap-5 mt-16 ">
         <div className="flex flex-col items-center space-y-2">
           <PiNotePencilBold size={35} color="#FFD700" />
           <h3 className="text-center font-medium text-2xl">Quick Learning</h3>
