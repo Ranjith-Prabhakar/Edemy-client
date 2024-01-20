@@ -5,7 +5,6 @@ import { courseCategory } from "../static data/courseCategory";
 type Props = {};
 
 const OurBestCourses = (props: Props) => {
- 
   return (
     <div className="mt-7  max-w-[90%] w-full m-auto rounded-lg flex justify-start  p-[25px]">
       <div className="flex flex-col items-center w-full">
@@ -13,8 +12,8 @@ const OurBestCourses = (props: Props) => {
           Find the <span className="text-[#FFD700]"> best course </span>
           for your needs
         </h1>
-       
-        <div className="w-[90%] m-auto">
+
+        <div className="w-full">
           <CourseCard courseCategory={courseCategory} />
           <div className="text-center mt-6">
             <button className="bg-transparent border  border-[#FFD700] px-3 py-1 rounded">
