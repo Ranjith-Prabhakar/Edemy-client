@@ -6,13 +6,21 @@ type Props = {};
 
 const Carousal = (props: Props) => {
   return (
-    <div className="mt-7 h-[70vh] max-w-[90%] w-full m-auto rounded-lg flex justify-between  p-[25px]">
-      <div className="flex flex-col  text-start w-3/5 ">
-        <h1 className="font-semibold text-5xl   leading-[60px] ">
+    <div className="mt-7 h-[70vh] w-full 1000px:max-w-[90%]  1000px:m-auto rounded-lg flex  justify-between  p-[25px]">
+      <div className="w-2/5 hidden 400px:block">
+        <Image
+          src={carousal}
+          className="1000px:ms-[80px] w-full h-[80vh] "
+          alt="carousal image"
+        />
+      </div>
+
+      <div className="flex flex-col 800px:ms-[100px] 1000px:ms-[200px] text-start w-3/5  mt-7">
+        <h1 className="font-semibold text-4xl 1000px:text-5xl   leading-[60px] ">
           Find The Best Courses
           <br /> To Grow Your <span className="text-[#FFD700]">Skills</span>
         </h1>
-        <p className="leading-6 mt-4 font-light w-[70%]">
+        <p className="leading-6 mt-4 font-light w-[70%] ">
           Discover a world of learning with our online courses! Our expert
           tutors are here to guide you as you unlock your potential and grow
           your skills. Learn anytime, anywhere, with interactive lessons and a
@@ -40,15 +48,6 @@ const Carousal = (props: Props) => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="w-2/5 ">
-        <Image
-          src={carousal}
-          className="w-full h-[80vh]"
-          
-          alt="carousal image"
-        />
       </div>
     </div>
   );

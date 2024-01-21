@@ -21,14 +21,15 @@ export default function RootLayout({
 }) {
   const pathName = usePathname();
   const pathList = ["/login", "/sign-up"];
-  
+
   return (
     <html lang="en">
       <body className={`${roboto.className} dark:bg-black dark:text-white`}>
         {pathList.includes(pathName) === false && <Header />}
 
         {children}
-        <Footer />
+
+        {pathList.includes(pathName) === false && <Footer />}
       </body>
     </html>
   );
