@@ -20,8 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathName = usePathname();
-  const pathList = ["/login", "/sign-up", "/admin_dashbord"];
-
+  const pathList = ["/login", "/sign-up"]; //"/admin_dashbord"
+  // const pathStatus =
+  console.log(pathName);
   return (
     <html lang="en">
       <body className={`${roboto.className} dark:bg-black dark:text-white`}>
